@@ -120,7 +120,7 @@ function printSuccess(span) {
 
     setTimeout(() => {
        
-        moveToPage("/musica.html");
+        moveToPage("./musica.html");
         window.close();
     }, 3000);
 
