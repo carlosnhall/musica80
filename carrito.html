@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="80, música. pop">
+    <meta name="description" content="Sitio dedicado a la venta de música de los 80'">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>80' POP MUSIC</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.ico">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-dark">
+            <a class="navbar-brand animate__animated animate__wobble" href="#"><img class="logo" src="img/logo.png"
+                    alt="Logo" /></a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="link-volver text-violet  mx-1" href="./musica.html">
+                        <i class="fa-regular fa-2x fa-circle-left"></i> <span class="carrito-texto">Seguir
+                            comprando</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-carrito">
+        <h1>Carrito de compras</h1>
+
+        <div class="contenedor-carrito">
+            <p class="carrito-vacio" id="contenedor-carrito-vacio">Su carrito está vacio.</p>
+
+            <div class="carrito-productos deshabilitado" id="contenedor-carrito-productos">
+                <!-- Muestro los productos en carrito desde JS -->
+            </div>
+
+            <div class="carrito-acciones deshabilitado" id="contenedor-carrito-acciones">
+                <div class="carrito-acciones-vaciar">
+                    <button class="boton-acciones-vaciar" id="carrito-acciones-vaciar">Vaciar carrito</button>
+                </div>
+                <div class="carrito-acciones-comprar">
+                    <div class="carrito-acciones-total">
+                        <p>Total:</p>
+                        <p id="acciones-total"></p>
+                    </div>
+                    <button class="boton-acciones-comprar" id="carrito-acciones-comprar">Comprar ahora</button>
+
+                </div>
+            </div>
+
+            <p class="carrito-compra-realizada deshabilitado" id="contenedor-carrito-comprado">Muchas gracias por su
+                compra! <i class="fa-regular fa-thumbs-up"></i> </p>
+                
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <h2>Siguenos en nuestras redes sociales</h2>
+        <ul>
+            <li>
+                <div>
+                    <a href="https://www.facebook.com/" class="icono" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/" class="icono" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.twitter.com/" class="icono" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+        </ul>
+        <p>2023 | CARLOS HALL</p>
+    </footer>
+
+    <script src="./js/carrito.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
